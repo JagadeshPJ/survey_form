@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Standard encryption-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!--Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Required js resources-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <section class="intro">
+          <div class="mask d-flex align-items-center h-100">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                  <div class="card" style="border-radius: 1rem;">
+                    <div class="card-body p-5">
+                      <form>
+                       <p class="heading">Survey form</p>
+                        <label class="form-label required1"><b>Name</b></label>
+                        <div class="row">
+                          <div class="col-12 col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="fname" class="form-control" required>
+                              <label class="form-label" for="fname">First</label>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="text" id="lname" class="form-control" required>
+                              <label class="form-label" for="lname">Last</label>
+                            </div>
+                          </div>
+                        </div>
+
+                         <!-- Email input -->
+                         <div class="form-outline mb-4">
+                            <label class="form-label required1" for="email"><b>Email</b></label>
+                            <input type="email" id="email" class="form-control" required >
+                          </div>
+
+                        <!-- Rating -->
+                        <label class="form-label required1"><b>Your Experience</b></label>
+                        <div class="container d-flex justify-content-center mt-200">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="stars">
+                                        <!--Star rating -->
+                                        <form action=""> 
+                                            <input class="star star-5" id="star-5" type="radio"> 
+                                            <label class="star star-5" for="star-5"></label>
+                                            <input class="star star-4" id="star-4" type="radio">
+                                            <label class="star star-4" for="star-4"></label>
+                                            <input class="star star-3" id="star-3" type="radio">
+                                            <label class="star star-3" for="star-3"></label>
+                                            <input class="star star-2" id="star-2" type="radio">
+                                            <label class="star star-2" for="star-2"></label>
+                                            <input class="star star-1" id="star-1" type="radio">
+                                            <label class="star star-1" for="star-1"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+      
+                        <div class="form-outline mb-4">
+                          <p>Overall how would you rate your experience with us?</p>
+                        </div>
+
+                        <!--Form to get rating-->
+                        <div class="form-outline mb-4">
+                            <p class="required1"><b>How satsified are you with</b></p>
+                        <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Very Unsatisfied</th>
+                                <th scope="col">Unsatisfied</th>
+                                <th scope="col">Neutral</th>
+                                <th scope="col">Satisfied</th>
+                                <th scope="col">Very Satisfied</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Purchase</th>
+                                    <td><input type="radio" name="radio1" id="radio11"></td>
+                                    <td><input type="radio" name="radio1" id="radio12"></td>
+                                    <td><input type="radio" name="radio1" id="radio13"></td>
+                                    <td><input type="radio" name="radio1" id="radio14"></td>
+                                    <td><input type="radio" name="radio1" id="radio15"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Service</th>
+                                    <td><input type="radio" name="radio2" id="radio21"></td>
+                                    <td><input type="radio" name="radio2" id="radio22"></td>
+                                    <td><input type="radio" name="radio2" id="radio23"></td>
+                                    <td><input type="radio" name="radio2" id="radio24"></td>
+                                    <td><input type="radio" name="radio2" id="radio25"></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Company overall</th>
+                                    <td><input type="radio" name="radio3" id="radio31"></td>
+                                    <td><input type="radio" name="radio3" id="radio32"></td>
+                                    <td><input type="radio" name="radio3" id="radio33"></td>
+                                    <td><input type="radio" name="radio3" id="radio34"></td>
+                                    <td><input type="radio" name="radio3" id="radio35"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--Form to get rating-->
+                        <div class="form-outline mb-4">
+                            <p class="required1"><b>How likely are you to</b></p>
+                            <table class="table table-striped">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Very Unsatisfied</th>
+                                    <th scope="col">Unsatisfied</th>
+                                    <th scope="col">Neutral</th>
+                                    <th scope="col">Satisfied</th>
+                                    <th scope="col">Very Satisfied</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Buy from us again</th>
+                                    <td><input type="radio" name="radio4" id="radio11"></td>
+                                    <td><input type="radio" name="radio4" id="radio12"></td>
+                                    <td><input type="radio" name="radio4" id="radio13"></td>
+                                    <td><input type="radio" name="radio4" id="radio14"></td>
+                                    <td><input type="radio" name="radio4" id="radio15"></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Recommend our product to others</th>
+                                    <td><input type="radio" name="radio5" id="radio21"></td>
+                                    <td><input type="radio" name="radio5" id="radio22"></td>
+                                    <td><input type="radio" name="radio5" id="radio23"></td>
+                                    <td><input type="radio" name="radio5" id="radio24"></td>
+                                    <td><input type="radio" name="radio5" id="radio25"></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Recommend our company to others</th>
+                                    <td><input type="radio" name="radio6" id="radio31"></td>
+                                    <td><input type="radio" name="radio6" id="radio32"></td>
+                                    <td><input type="radio" name="radio6" id="radio33"></td>
+                                    <td><input type="radio" name="radio6" id="radio34"></td>
+                                    <td><input type="radio" name="radio6" id="radio35"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+
+                        <!-- Textbox -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="comments"><b>Additional comments or suggestions</b></label>
+                          <textarea class="form-control" id="comments" rows="6"></textarea>
+                        </div>
+      
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-secondary btn-rounded btn-block">Submit</button>
+                      </form>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+</body>
+</html>
+<!--End of the document-->
